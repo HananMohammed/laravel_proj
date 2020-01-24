@@ -32,7 +32,8 @@
   </div>
 </div>
 
-
 @endforeach
 @endif
+<div style="width:100%;margin-top:1200px;"></div>
+
 @endsection

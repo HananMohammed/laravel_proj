@@ -37,15 +37,20 @@ class signup extends Controller
     }
     public function login(Request $req){
         //select by email and password using and in where 
-        $data = supplier::where([
-                   ['email','=',$req->input('t_email')],
-                   ['password','=',$req->input('t_pass')],
-        ])->get();
-        //then create the session 
-        $req->session()->put('s_email',$req->input('t_email'));
+        $data = supplier::where('email','=',$req->input('t_email'))->
+                  where('password','=',$req->input('t_pass'))->count();
+      
         //then redirect to setting page
-        return view('setting')->with('all_data',$data);
+        if($data>0){
+              //then create the session 
+        $req->session()->put('s_email',$req->input('t_email'));
+        return redirect('setting');
+    }
+        else{
+            return redirect('login_supplier');
+        }
       }
+      
     public function logout(Request $req){
         $req->session()->forget('s_email');
         return view('login_supplier');

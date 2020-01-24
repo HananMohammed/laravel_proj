@@ -17,7 +17,7 @@ class login_is
      */
     public function handle($request, Closure $next)
     {
-       if(! $request->session()->get('s_email')){
+       if(!$request->session()->get('s_email')){
         return redirect('login_supplier');
 
        }

@@ -1,6 +1,6 @@
 body{
     width:100%;
-  
+    background-color:#313131;
   }
 
   .main-section{
@@ -13,7 +13,7 @@ body{
 
   }
   h1,lable{
-    color:#031e3b;
+    color:#cbd2da;
     font-style: bold;
     font-size: 20px;
     text-align: center;margin-top: 20px;

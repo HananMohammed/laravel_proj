@@ -109,3 +109,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+//--------------------Mail  ----------------
+Route::get('/mail',function(){
+    return view('mail');
+});
+Route::POST('mail/save','send_email@send_email');
+//--------------------------Admin---------------------
+Route::get('/admin',function(){
+    return view('admin.admin');
+});

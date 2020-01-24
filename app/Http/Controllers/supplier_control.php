@@ -11,7 +11,7 @@ class supplier_control extends Controller
   public function __construct(){
     $this->middleware('middleware_approve');
   }
-    //any clickable request Request $req
+  //any clickable request Request $req
   
 
   public function profile_data(Request $req){
@@ -38,6 +38,7 @@ class supplier_control extends Controller
 
 
   }
+  
 //method used to get  profile data  for the supplier
 
   public function get_profile_data_to_edit(Request $req){
@@ -122,7 +123,7 @@ public function logout( Request $req){
 }
 
 }
-//task :edit_item +my_items+delete_items+
-//admin_side>> manage(items,suppliers,customers) Reports(item report , supplier report , customers report , purchase  )
+//task :edit_item +my_items + delete_items+
+//admin_side>>  manage(items,suppliers,customers) Reports(item report , supplier report , customers report , purchase  )
 //Active and deactive in items 
 //update all items set items= Deactive where email = *******

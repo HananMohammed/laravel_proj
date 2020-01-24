@@ -1,0 +1,36 @@
+.sitename{
+    height:400px;position:1;margin-top:-300px;margin-left:30%;color:white; font-size:40px;font-family: cursive;
+}
+.sitelable{
+    color:white;font-size:40px; 
+}
+.desc{
+   color: #636e72; font-size:18px;font-family: cursive;
+}
+.info{
+ width:50%;
+}
+hr{height:4px;color:#a29bfe ;width:90%;margin-left:5%;}
+#image{
+    width:200px;height:200px;border-radius:50%;
+}
+#p{
+    color: #636e72; font-size:16px;font-family: cursive;
+
+}
+#h3{
+    font-size:20px;font-family: cursive;
+
+}
+.footer{
+    height:150px;width:110% ;margin-left:-10%;
+}
+.footer ul{
+    margin-left:30%;
+}
+.footer ul li{
+    list-style-type: none;
+}
+.footer #copyright{
+    margin-top: -20px;
+}

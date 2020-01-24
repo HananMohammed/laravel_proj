@@ -21,6 +21,8 @@
 <div class="space" data-aos="fade-left"></div>
 {!! Form::open(['url' => 'signup/save','files'=>true])!!}
   {{Form::text('t_name','',['class'=>'form-control' , 'placeholder'=>'your Name'])}}
+  <!--<div class="alert alert-danger">{{$errors->first('t_name')}}</div>-->
+
   <div class="space" ></div>
   {{Form::text('t_phone','',['class'=>'form-control' , 'placeholder'=>'your phone'])}}
   <div class="space" ></div>
